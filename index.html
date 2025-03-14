@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🍕 Order Your Pizza 🍕</h1>
+
+        <!-- Student Info (Dynamically Added with JS) -->
+        <p id="student-info"></p>
+
+        <form id="pizza-form">
+            <!-- Pizza Size -->
+            <label for="size">Choose a Size:</label>
+            <select id="size" required>
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+            </select>
+
+            <!-- Toppings (Checkboxes) -->
+            <fieldset>
+                <legend>Choose Toppings:</legend>
+                <input type="checkbox" id="cheese" value="Cheese">
+                <label for="cheese">Cheese</label>
+
+                <input type="checkbox" id="pepperoni" value="Pepperoni">
+                <label for="pepperoni">Pepperoni</label>
+
+                <input type="checkbox" id="mushrooms" value="Mushrooms">
+                <label for="mushrooms">Mushrooms</label>
+
+                <input type="checkbox" id="olives" value="Olives">
+                <label for="olives">Olives</label>
+            </fieldset>
+
+            <!-- Crust Type -->
+            <label for="crust">Choose Crust Type:</label>
+            <select id="crust" required>
+                <option value="Thin">Thin</option>
+                <option value="Thick">Thick</option>
+                <option value="Stuffed">Stuffed</option>
+            </select>
+
+            <!-- Quantity -->
+            <label for="quantity">Number of Pizzas:</label>
+            <input type="number" id="quantity" min="1" value="1" required>
+
+            <!-- Order Button -->
+            <button type="button" id="order-btn">Order Now</button>
+        </form>
+
+        <!-- Order Summary -->
+        <div id="order-summary"></div>
+    </div>
+
+</body>
+</html>
