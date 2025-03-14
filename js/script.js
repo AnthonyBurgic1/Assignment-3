@@ -1,7 +1,7 @@
 // Dynamically insert student info
 document.addEventListener("DOMContentLoaded", function () {
     const studentInfo = document.getElementById("student-info");
-    studentInfo.innerHTML = "Student ID: 123456 | Name: John Doe";
+    studentInfo.innerHTML = "Student ID: 200564553 | Name: Anthony Burgic";
 });
 
 // Pizza Class
